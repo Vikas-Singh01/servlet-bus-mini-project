@@ -1,0 +1,110 @@
+
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>servlet-bus-project</display-name>
+	
+	<welcome-file-list>
+		<welcome-file>home.jsp</welcome-file>
+	</welcome-file-list>
+ <servlet>
+ <servlet-name>adminLogin</servlet-name>
+  <servlet-class>servlet_bus_project.controller.AdminLoginController</servlet-class> 
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>adminLogin</servlet-name>
+  <url-pattern>/adminLogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>insertAdmin</servlet-name>
+  <servlet-class>servlet_bus_project.controller.InsertAdminController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>insertAdmin</servlet-name>
+  <url-pattern>/insertAdmin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>busInsert</servlet-name>
+  <servlet-class>servlet_bus_project.controller.BusInsertController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>busInsert</servlet-name>
+  <url-pattern>/busInsert</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>home</servlet-name>
+  <servlet-class>servlet_bus_project.controller.UserLoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>home</servlet-name>
+  <url-pattern>/userLogin</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>insertUser</servlet-name>
+  <servlet-class>servlet_bus_project.controller.UserInsertController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>insertUser</servlet-name>
+  <url-pattern>/insertUser</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>searchBus</servlet-name>
+  <servlet-class>servlet_bus_project.controller.SearchBusController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>searchBus</servlet-name>
+  <url-pattern>/searchBus</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>deleteBus</servlet-name>
+  <servlet-class>servlet_bus_project.controller.BusDeleteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>deleteBus</servlet-name>
+  <url-pattern>/deleteBus</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>updateBus</servlet-name>
+  <servlet-class>servlet_bus_project.controller.BusUpdateController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>updateBus</servlet-name>
+  <url-pattern>/updateBus</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+  <servlet-name>updateBusComplete</servlet-name>
+  <servlet-class>servlet_bus_project.controller.BusUpdateCompleteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>updateBusComplete</servlet-name>
+  <url-pattern>/busUpdateComplete</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  <servlet-name>bookTicket</servlet-name>
+  <servlet-class>servlet_bus_project.controller.BookTicketController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>bookTicket</servlet-name>
+  <url-pattern>/bookTicket</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+  <servlet-name>payment</servlet-name>
+  <servlet-class>servlet_bus_project.controller.PaymentController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>payment</servlet-name>
+  <url-pattern>/paymentController</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
